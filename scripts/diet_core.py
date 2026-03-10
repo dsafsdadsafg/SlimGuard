@@ -11,7 +11,7 @@ from pathlib import Path
 from typing import Dict, List, Optional
 
 MEMORY_DIR = Path(__file__).parent / "memory"
-DB_PATH = Path(__file__).parent / "tools" / "food_database.json"
+DB_PATH = Path(__file__).parent.parent / "tools" / "food_database.json"
 
 
 def _ensure_memory_files():
@@ -88,7 +88,6 @@ def _parse_meal_message(message: str) -> List[Dict]:
     chinese_units = ["个", "片", "碗", "杯", "份", "块", "袋", "勺"]
     unit_pattern = "|".join(chinese_units)
     
-    # 模式：数字 + 单位 + 食物名
     pattern = rf'(\d+)\s*({unit_pattern})\s*([^\s\d，,，和]+)'
     matches = re.findall(pattern, message)
     
@@ -97,10 +96,21 @@ def _parse_meal_message(message: str) -> List[Dict]:
             amount = int(match[0])
             unit = match[1]
             food_name = match[2].strip()
+            
             if food_name and amount > 0:
-                foods.append({"name": food_name, "amount": amount, "unit": unit})
+                if len(food_name) >= 1:
+                    foods.append({"name": food_name, "amount": amount, "unit": unit})
         except:
             continue
+    
+    if not foods:
+        words = message.replace("吃了", "").replace("早餐", "").replace("午餐", "").replace("晚餐", "").strip()
+        num_match = re.search(r'(\d+)', words)
+        if num_match:
+            amount = int(num_match.group(1))
+            food_name = re.sub(r'\d+', '', words).strip()
+            if food_name and amount > 0:
+                foods.append({"name": food_name, "amount": amount, "unit": "份"})
     
     return foods
 
