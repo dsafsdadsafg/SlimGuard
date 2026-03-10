@@ -1,0 +1,43 @@
+{
+  "主食": {
+    "米饭": {"calories": 116, "protein": 2.6, "carbs": 25.6, "fat": 0.3, "unit": "100g"},
+    "面条": {"calories": 107, "protein": 3.2, "carbs": 22.8, "fat": 0.2, "unit": "100g"},
+    "馒头": {"calories": 223, "protein": 7.8, "carbs": 47, "fat": 1.2, "unit": "100g"},
+    "面包": {"calories": 265, "protein": 8, "carbs": 49, "fat": 4.3, "unit": "100g"},
+    "全麦面包": {"calories": 180, "protein": 8, "carbs": 30, "fat": 2, "unit": "100g"},
+    "包子": {"calories": 223, "protein": 8.1, "carbs": 28.4, "fat": 9.1, "unit": "100g"},
+    "饺子": {"calories": 240, "protein": 8.2, "carbs": 30.4, "fat": 9.4, "unit": "100g"},
+    "粥": {"calories": 46, "protein": 1.1, "carbs": 9.9, "fat": 0.3, "unit": "100g"}
+  },
+  "蛋类": {
+    "鸡蛋": {"calories": 143, "protein": 12.6, "carbs": 0.7, "fat": 9.5, "unit": "100g"},
+    "鸭蛋": {"calories": 180, "protein": 12.6, "carbs": 1.1, "fat": 13, "unit": "100g"}
+  },
+  "肉类": {
+    "猪肉": {"calories": 395, "protein": 27, "carbs": 0, "fat": 31, "unit": "100g"},
+    "牛肉": {"calories": 410, "protein": 26, "carbs": 0, "fat": 34, "unit": "100g"},
+    "鸡肉": {"calories": 167, "protein": 31, "carbs": 0, "fat": 3.6, "unit": "100g"},
+    "鸡胸肉": {"calories": 133, "protein": 31, "carbs": 0, "fat": 3.3, "unit": "100g"}
+  },
+  "蔬菜": {
+    "白菜": {"calories": 18, "protein": 1.4, "carbs": 3.3, "fat": 0.2, "unit": "100g"},
+    "菠菜": {"calories": 28, "protein": 2.6, "carbs": 4.5, "fat": 0.3, "unit": "100g"},
+    "西红柿": {"calories": 20, "protein": 1, "carbs": 4.5, "fat": 0.2, "unit": "100g"},
+    "黄瓜": {"calories": 15, "protein": 0.8, "carbs": 3.6, "fat": 0.2, "unit": "100g"},
+    "土豆": {"calories": 77, "protein": 2, "carbs": 17.8, "fat": 0.2, "unit": "100g"}
+  },
+  "水果": {
+    "苹果": {"calories": 53, "protein": 0.3, "carbs": 14.1, "fat": 0.2, "unit": "100g"},
+    "香蕉": {"calories": 89, "protein": 1.1, "carbs": 23, "fat": 0.3, "unit": "100g"},
+    "橙子": {"calories": 48, "protein": 0.9, "carbs": 11.8, "fat": 0.2, "unit": "100g"}
+  },
+  "奶类": {
+    "牛奶": {"calories": 54, "protein": 3, "carbs": 5, "fat": 3.2, "unit": "100ml"},
+    "酸奶": {"calories": 72, "protein": 2.9, "carbs": 10.3, "fat": 2.6, "unit": "100ml"}
+  },
+  "饮品": {
+    "水": {"calories": 0, "protein": 0, "carbs": 0, "fat": 0, "unit": "100ml"},
+    "咖啡": {"calories": 2, "protein": 0.1, "carbs": 0, "fat": 0, "unit": "100ml"},
+    "茶": {"calories": 1, "protein": 0, "carbs": 0.2, "fat": 0, "unit": "100ml"}
+  }
+}
